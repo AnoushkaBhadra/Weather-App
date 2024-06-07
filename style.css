@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+.body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:  #818181;
+}
+.container {
+    height: 35em;
+    width: 25rem; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;    
+    background-color: #fff;
+    background: var('sunny.jpg') no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.weather-icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.weather_icon {
+    width: 5rem;
+    height: 5rem;
+}
+.weather-info {
+    font-family: 'Geologica';
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); 
+    padding: 8px;
+    text-align: center;
+    margin-top: 1rem;
+}
+.weather-clear{
+    color: rgb(26, 24, 24);
+}
+.location {
+    font-family: 'Geologica';
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5); 
+    padding: 8px;
+    text-align: center;
+}
+.temperature {
+    font-size: 3rem;
+}
+.feels-humidity {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1rem;
+}
+.feels_like-container,
+.humidity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.search_bar {
+    position: absolute;
+    bottom: 8rem;
+    width: calc(100% -4rem);
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+.bar {
+    width: 70%;
+    height: 2rem;
+    border: none;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px 0 0 5px; 
+    outline: none;
+}
+.icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color:transparent;
+    border-radius: 0 5px 5px 0;
+}
+.icon svg {
+    width: 24px;
+    height: 24px;
+    fill: whitesmoke;
+}
